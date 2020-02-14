@@ -1,6 +1,5 @@
 #include "Rational.h"
 
-// Конструктор с 2 параметъра
 Rational::Rational(int n, int d)
 {
 	if (n == 0 || d == 0) {
@@ -41,7 +40,7 @@ int Rational::getDenominator() const
 	return denom;
 }
 
-// Най-голям общ делител
+// greatest common divisor
 int Rational::gcd(int a, int b)
 {
 	return b == 0 ? a : gcd(b, a % b);
